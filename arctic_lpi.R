@@ -18,7 +18,7 @@ arctic_lpi <- LPIMain(example_infile_name, REF_YEAR = 1970, PLOT_MAX = 2014, BOO
 # Remove NAs (trailing years with no data)
 arctic_lpi <- arctic_lpi[complete.cases(arctic_lpi), ]
 # Plot the resulting index
-ggplot_lpi(arctic_lpi, title = "arctic_lpi", xlims=c(1970, 2014), ylim=c(0, 2))
+ggplot_lpi(arctic_lpi, title = "arctic_lpi", xlims=c(1970, 2014), ylim=c(0, 5))
 # Plot the resulting index with logged y-axis (note the use of a +ive ymin)
 ggplot_lpi(arctic_lpi, title = "arctic_lpi_log", xlims=c(1970, 2014), ylim=c(0.3, 2), trans="log")
 
@@ -47,19 +47,19 @@ norway_vector = rep(TRUE, nrow(norway_lpi))
 
 alaska_infile_name <- create_infile(alaska_lpi, index_vector=alaska_vector, name="alaska_data")
 alaska_lpi <- LPIMain(alaska_infile_name, REF_YEAR = 1970, PLOT_MAX = 2012, BOOT_STRAP_SIZE = 100, VERBOSE=FALSE)
-ggplot_lpi(alaska_lpi, title = "alaska_lpi", xlims=c(1970, 2012), ylim=c(0, 2))
+ggplot_lpi(alaska_lpi, title = "alaska_lpi", xlims=c(1970, 2012), ylim=c(0, 10))
 
 beaufort_infile_name <- create_infile(beaufort_lpi, index_vector=beaufort_vector, name="beaufort_data")
 beaufort_lpi <- LPIMain(beaufort_infile_name, REF_YEAR = 1970, PLOT_MAX = 2012, BOOT_STRAP_SIZE = 100, VERBOSE=FALSE)
-ggplot_lpi(beaufort_lpi, title = "beaufort_lpi", xlims=c(1970, 2012), ylim=c(0, 2))
+ggplot_lpi(beaufort_lpi, title = "beaufort_lpi", xlims=c(1970, 2012), ylim=c(0, 20))
 
 egreenland_infile_name <- create_infile(egreenland_lpi, index_vector=egreenland_vector, name="egreenland_data")
 egreenland_lpi <- LPIMain(egreenland_infile_name, REF_YEAR = 1970, PLOT_MAX = 2012, BOOT_STRAP_SIZE = 100, VERBOSE=FALSE)
-ggplot_lpi(egreenland_lpi, title = "egreenland_lpi", xlims=c(1970, 2012), ylim=c(0, 2))
+ggplot_lpi(egreenland_lpi, title = "egreenland_lpi", xlims=c(1970, 2012), ylim=c(0, 10))
 
 wgreenland_infile_name <- create_infile(wgreenland_lpi, index_vector=wgreenland_vector, name="wgreenland_data")
 wgreenland_lpi <- LPIMain(wgreenland_infile_name, REF_YEAR = 1970, PLOT_MAX = 2012, BOOT_STRAP_SIZE = 100, VERBOSE=FALSE)
-ggplot_lpi(wgreenland_lpi, title = "wgreenland_lpi", xlims=c(1970, 2012), ylim=c(0, 2))
+ggplot_lpi(wgreenland_lpi, title = "wgreenland_lpi", xlims=c(1970, 2012), ylim=c(0, 6))
 
 janmayen_infile_name <- create_infile(janmayen_lpi, index_vector=janmayen_vector, name="janmayen_data")
 janmayen_lpi <- LPIMain(janmayen_infile_name, REF_YEAR = 1970, PLOT_MAX = 2012, BOOT_STRAP_SIZE = 100, VERBOSE=FALSE)
