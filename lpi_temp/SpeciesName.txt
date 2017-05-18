@@ -1,0 +1,19 @@
+x
+1 Fratercula_arctica
+2 Larus_canus
+3 Uria_aalge
+4 Uria_lomvia
+5 Rissa_tridactyla
+6 Sterna_paradisaea
+7 Pollachius_virens
+8 Larus_smithsonianus
+9 Stercorarius_parasiticus
+10 Pagophila_eburnea
+11 Larus_hyperboreus
+12 Mallotus_villosus
+13 Calidris_pygmaea
+14 Ursus_maritimus
+15 Polysticta_stelleri
+16 Stercorarius_pomarinus
+17 Pluvialis_squatarola
+18 Gasterosteus_aculeatus
