@@ -1,8 +1,9 @@
 ###LPI Arctic#####
+library(rlpi)
 # Constructing infiles from a populations table...
 
 # First read the population table (this is the Living Planet Database excluding confidential records and filtering for marine Arctic populations)
-lpi_data <- read.csv("LPI_files/arctic_marine_lpi.csv", na.strings = "NULL")
+lpi_data <- read.csv("LPI_files/arctic_marine_lpi_2.csv", na.strings = "NULL")
 
 # Create an infile from all the data. All the population data in the 'lpi_data' table will be converted and stored in a file called 'example_data_pops.txt' 
 #and a file called 'example_data_infile.txt' will be created that references the first file 
